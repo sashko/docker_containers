@@ -42,6 +42,9 @@ ENV DEBIAN_FRONTEND=teletype
 # Expose SSH port
 EXPOSE 22
 
-# Switch user
+# Switch user and work directory
 USER developer
 WORKDIR /home/developer/
+
+# Run BASH
+CMD ["bash"]
